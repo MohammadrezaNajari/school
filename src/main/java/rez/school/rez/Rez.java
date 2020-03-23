@@ -1,7 +1,9 @@
 package rez.school.rez;
 
-public class Rez {
+import javax.validation.constraints.NotBlank;
 
+public class Rez {
+    @NotBlank(message = "need required")
     private String rez;
 
     public String getRez() {
